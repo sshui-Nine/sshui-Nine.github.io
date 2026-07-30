@@ -1,20 +1,20 @@
 (() => {
-  const contactEmail = "xuss97555@163.com";
+  const contactEmail = "sshui97555@gmail.com";
 
   function buildBrief(form) {
     const inputs = form.querySelectorAll("input");
     const tone = form.querySelector("select").value;
     return [
-      "【先上线 · 免费页面方案】",
-      `我提供：${inputs[0].value.trim()}`,
-      `服务对象：${inputs[1].value.trim()}`,
-      `希望访客：${inputs[2].value.trim()}`,
-      `页面感觉：${tone}`,
+      "XIANSHANG STUDIO — FREE PAGE BRIEF",
+      `Service: ${inputs[0].value.trim()}`,
+      `Best-fit client: ${inputs[1].value.trim()}`,
+      `Desired next action: ${inputs[2].value.trim()}`,
+      `Preferred tone: ${tone}`,
       "",
-      "我想先做一页可点击预览。请回复我：",
-      "1. 你建议的页面结构",
-      "2. 还需要我提供什么",
-      "3. 最早何时能看到初稿",
+      "I would like to see a focused one-page direction. Please reply with:",
+      "1. Your recommended page structure",
+      "2. What content you need from me",
+      "3. When I could see the first clickable direction",
     ].join("\n");
   }
 
@@ -40,7 +40,7 @@
     const ready = document.createElement("small");
     ready.textContent = "READY TO SEND";
     const title = document.createElement("h3");
-    title.textContent = "你的需求已整理好";
+    title.textContent = "Your brief is ready";
     const check = document.createElement("span");
     check.textContent = "✓";
     titleWrap.append(ready, title);
@@ -51,27 +51,27 @@
 
     const actions = document.createElement("div");
     actions.className = "resultActions";
-    const email = makeButton("邮件发送 ↗", () => {
-      const subject = encodeURIComponent("先上线｜我的一页网站需求");
+    const email = makeButton("Open in email ↗", () => {
+      const subject = encodeURIComponent("Xianshang Studio | My one-page website brief");
       const body = encodeURIComponent(brief);
       window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
     });
-    const copy = makeButton("复制需求", async () => {
+    const copy = makeButton("Copy brief", async () => {
       await navigator.clipboard.writeText(brief);
-      copy.textContent = "已复制 ✓";
+      copy.textContent = "Copied ✓";
     });
-    const share = makeButton("其他方式分享", async () => {
+    const share = makeButton("Share another way", async () => {
       if (navigator.share) {
-        await navigator.share({ title: "我的一页网站需求", text: brief });
+        await navigator.share({ title: "My one-page website brief", text: brief });
       } else {
         await navigator.clipboard.writeText(brief);
-        share.textContent = "已复制 ✓";
+        share.textContent = "Copied ✓";
       }
     });
     actions.append(email, copy, share);
 
     const note = document.createElement("p");
-    note.textContent = `邮件将发送至 ${contactEmail}；点击前你仍可以检查和修改内容。`;
+    note.textContent = `The email will be addressed to ${contactEmail}; you can review and edit it before sending.`;
     card.append(head, preview, actions, note);
     form.insertAdjacentElement("afterend", card);
     card.scrollIntoView({ behavior: "smooth", block: "center" });

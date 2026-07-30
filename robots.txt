@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://sshui-nine.github.io
+Sitemap: https://sshui-nine.github.io/sitemap.xml

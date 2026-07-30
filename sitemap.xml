@@ -1,32 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url>
-<loc>https://sshui-nine.github.io/</loc>
-<xhtml:link rel="alternate" hreflang="zh-CN" href="https://sshui-nine.github.io/" />
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://sshui-nine.github.io/en/" />
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-<url>
-<loc>https://sshui-nine.github.io/en/</loc>
-<xhtml:link rel="alternate" hreflang="zh-CN" href="https://sshui-nine.github.io/" />
-<xhtml:link rel="alternate" hreflang="en-GB" href="https://sshui-nine.github.io/en/" />
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-<url>
-<loc>https://sshui-nine.github.io/demo/tutor</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://sshui-nine.github.io/demo/photo</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://sshui-nine.github.io/demo/career</loc>
-<changefreq>monthly</changefreq>
-<priority>0.6</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sshui-nine.github.io/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sshui-nine.github.io/en/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sshui-nine.github.io/demo/tutor/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sshui-nine.github.io/demo/photo/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sshui-nine.github.io/demo/career/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sshui-nine.github.io/demo/cleaning/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
